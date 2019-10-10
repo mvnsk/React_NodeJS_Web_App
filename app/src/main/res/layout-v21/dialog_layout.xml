@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="2">
+
+    <ImageView
+        android:id="@+id/dialog_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintTop_toBottomOf="@+id/dialog_image"
+        tools:layout_editor_absoluteX="186dp"
+        android:textStyle="bold"/>
+
+    <ImageButton
+        android:id="@+id/dialog_twitter"
+        android:layout_width="204dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_weight="1"
+        android:gravity="center|bottom"
+        android:paddingLeft="30dp"
+        android:background="@color/colorWhite"
+        android:src="@drawable/bluetwitter"
+        android:strokeColor="@color/colorPurple"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dialog_title" />
+
+    <ImageButton
+        android:id="@+id/dialog_bookmark"
+        android:layout_width="204dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:background="@color/colorWhite"
+        android:gravity="center|bottom"
+        android:paddingLeft="30dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/bookmark_empty"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        android:strokeColor="@color/colorPurple"
+        app:layout_constraintStart_toEndOf="@+id/dialog_twitter"
+        app:layout_constraintTop_toTopOf="@+id/dialog_twitter" />
+
+</android.support.constraint.ConstraintLayout>

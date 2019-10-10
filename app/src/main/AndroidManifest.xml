@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.myapplication">
+
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/iconnews"
+        android:label="NewsApp"
+        android:roundIcon="@drawable/iconnews"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.Launcher"
+        tools:replace="android:appComponentFactory,android:icon,android:theme,android:label"
+        android:appComponentFactory="whateverString"
+        tools:ignore="InnerclassSeparator"
+        >
+
+
+        <activity
+            android:name=".Activities.SearchPageActivity"
+            android:label="@string/title_activity_search"
+            android:theme="@style/AppTheme.Launcher.NoActionBar"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity android:name=".Activities.MainActivity"
+            android:windowSoftInputMode="adjustPan"
+           >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activities.HeadlinesActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.Launcher.NoActionBar"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activities.TrendingNewsActivity"
+            android:theme="@style/AppTheme.Launcher.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".Activities.FavouritesActivity"
+            android:theme="@style/AppTheme.Launcher.NoActionBar"
+           />
+        <activity
+            android:name=".Activities.BusinessNewsActivity"
+            android:icon="@drawable/backarrow"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:windowSoftInputMode="adjustPan"/>
+    </application>
+
+</manifest>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swiperefresh_items"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/activity_margin">
+
+        <progressBar
+            android:id="@+id/progress_bar"
+            style="@style/Widget.AppCompat.progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:indeterminateTint="@color/colorPurple"
+            />
+        <TextView
+            android:id="@+id/Progress_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:gravity="center"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textSize="18sp"
+            android:layout_below="@id/progress_bar"
+            android:text="@string/progress_bar_text"
+            android:layout_centerHorizontal="true"/>
+
+        <!-- Empty view is only visible when the list has no items. -->
+        <TextView
+            android:id="@+id/empty_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textAppearance="?android:textAppearanceMedium" />
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:dividerHeight="4dp"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/card_view_marginLeft"
+            android:layout_marginRight="@dimen/card_view_marginLeft"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"/>
+
+    </RelativeLayout>
+</android.support.v4.widget.SwipeRefreshLayout>

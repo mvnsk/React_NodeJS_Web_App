@@ -1,0 +1,148 @@
+<resources>
+
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+
+    <style name="TextAppearance.AppCompat.Widget.ActionBar.Title" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:background">@color/colorGrey</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">18dp</item>
+        <item name="searchViewStyle">@style/AppTheme.SearchView</item>
+        <item name="searchHintIcon">@drawable/search_icon_image</item>
+    </style>
+
+    <style name="TextAppearance.AppCompat.Widget.ActionBar" parent="@style/TextAppearance.AppCompat.Widget.ActionBar">
+        <item name="android:background">@color/colorGrey</item>
+    </style>
+
+    <style name="MaterialDesignTheme" parent="android:Theme.Material.Light">
+
+        <item name="android:colorPrimary">@color/colorPrimary</item>
+        <item name="android:colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:colorAccent">@color/colorAccent</item>
+
+
+        <item name="android:windowActivityTransitions">true</item>
+        <item name="android:windowEnterTransition">@android:transition/slide_right</item>
+        <item name="android:windowExitTransition">@android:transition/slide_left</item>
+
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+
+    <style name="GridViewTemplate">
+        <item name="android:layout_marginBottom">@dimen/gridView_marginBottom</item>
+        <item name="android:verticalSpacing">@dimen/verticalSpacing</item>
+        <item name="android:horizontalSpacing">@dimen/horizontalSpacing</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+
+    <style name="NewsstandGridViewTemplate">
+        <item name="android:layout_marginBottom">@dimen/gridView_marginBottom</item>
+        <item name="android:verticalSpacing">@dimen/verticalSpacing</item>
+        <item name="android:horizontalSpacing">@dimen/horizontalSpacing</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+
+    <style name="NewsListCardView">
+        <item name="android:elevation">@dimen/elevation</item>
+        <item name="android:layout_margin">@dimen/activity_margin</item>
+        <item name="android:background">@color/colorBlack</item>
+    </style>
+
+
+    <style name="MyCustomTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">@color/colorPurple</item>
+        <item name="tabTextAppearance">@style/MyCustomTextAppearance</item>
+        <item name="android:textColor">@color/colorPurple</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+    <style name="MyTabLayoutTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="MyCustomTextAppearance" parent="TextAppearance.AppCompat.Button">
+        <item name="textAllCaps">false</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+
+    <style name="NewsCardView">
+        <item name="android:elevation">10dp</item>
+        <item name="android:layout_margin">8dp</item>
+    </style>
+
+    <style name="NewsstandCardView">
+        <item name="android:elevation">10dp</item>
+        <item name="android:layout_margin">8dp</item>
+    </style>
+
+    <style name="AppTheme.Launcher">
+        <item name="android:windowBackground">@drawable/launch_screen</item>
+    </style>
+
+    <style name="DetailToolbar">
+        <item name="android:background">@color/colorGrey</item>
+        <item name="android:textColor">#000</item>
+    </style>
+
+    <style name="AppTheme.Launcher.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/colorGreyBackground</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+
+    <style name="AppTheme.Launcher.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.Launcher.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="MySearchViewStyle" parent="Widget.AppCompat.SearchView">
+
+        <item name="searchIcon">@drawable/search_icon_image</item>
+        <item name="android:searchHintIcon">@drawable/search_icon_image</item>
+    </style>
+
+    <style name="AppTheme.SearchView" parent="Widget.AppCompat.SearchView.ActionBar">
+
+
+        <item name="searchHintIcon">@drawable/search_icon_image</item>
+    <item name="searchIcon">@drawable/search_icon_image</item>
+        <item name="android:searchHintIcon">@drawable/search_icon_image</item>
+        <item name="android:queryHint">true</item>
+        <item name="queryHint">""</item>
+        <item name="searchViewStyle">@style/PeaseGodSearch</item>
+        <item name="hintAnimationEnabled"> true</item>
+    </style>
+
+    <style name="Theme.App" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="searchViewStyle">@style/SearchViewMy</item>
+    </style>
+    <style name="SearchViewMy" parent="Widget.AppCompat.Light.SearchView">
+        <item name="searchHintIcon">@drawable/bluetwitter</item>
+        <item name="queryBackground">@android:color/black</item>
+        <item name="android:searchHintIcon">@drawable/search_icon_image</item>
+        <item name="android:queryHint"></item>
+
+    </style>
+    <style name="PeaseGodSearch" parent="Widget.AppCompat.SearchView">
+        <item name="searchHintIcon">@drawable/bluetwitter</item>
+        <item name="queryBackground">@android:color/black</item>
+        <item name="android:searchHintIcon">@drawable/search_icon_image</item>
+        <item name="android:queryHint">Search</item>
+
+    </style>
+</resources>

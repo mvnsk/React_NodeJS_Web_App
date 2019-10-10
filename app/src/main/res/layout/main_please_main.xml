@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<android.support.v7.widget.Toolbar
+
+
+    android:id="@+id/custom_home_toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+
+</android.support.v7.widget.Toolbar>
+
+<android.support.v4.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.design.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="118dp">
+        <ImageView
+            android:id="@+id/weather_image"
+            android:layout_width="match_parent"
+            android:layout_height="118dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/round_outline"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/sunny_weather" />
+        <!--  android:layout_marginStart="8dp"
+         android:layout_marginLeft="8dp"
+         android:layout_marginTop="8dp"
+         android:layout_marginEnd="8dp"
+         android:layout_marginRight="8dp"
+         android:layout_marginBottom="8dp"-->
+        <TextView
+            android:id="@+id/weather_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="64dp"
+            android:layout_marginTop="16dp"
+            android:text="City"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            />
+        <!--   -->
+
+        <TextView
+            android:id="@+id/weather_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_below="@id/weather_city"
+            android:layout_marginStart="64dp"
+            android:text="State"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            />
+
+        <TextView
+            android:id="@+id/weather_temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/weather_city"
+            android:layout_alignRight="@id/weather_image"
+            android:layout_marginEnd="48dp"
+            android:text="19"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+        <!--    android:layout_alignTop="@id/weather_city"
+               android:layout_alignRight="@id/weather_image"
+               android:layout_marginEnd="48dp"-->
+        <TextView
+            android:id="@+id/weather_cat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/weather_temp"
+            android:text="sunny"
+            android:layout_alignBaseline="@id/weather_state"
+            android:layout_below="@id/weather_temp"
+
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            />
+
+    </android.support.design.card.MaterialCardView>
+
+</android.support.v4.widget.NestedScrollView>
+</LinearLayout>
